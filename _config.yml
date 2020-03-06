@@ -1,0 +1,24 @@
+title: Všeobecná ambulancia pre dospelých MUDr. Valéria Kuráková
+email: ambulancia.kurakova@gmail.com
+mobile: "+421 948 917 761"
+primary_color: "#303f9f"
+secondary_color: "#3f51b5"
+description: >-
+  Všeobecná ambulacia pre dospelých MUDr. Valéria Kuráková. Ondavská 4/A, 04011 Košice.
+  Ambulancia všeobecného lekára.
+baseurl: ""
+url: "https://vseobecna-ambulancia-ke.sk"
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - nix/
+  - shell.nix
+  - README.md
+  - .envrc
+  - CNAME

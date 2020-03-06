@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sk">
+{% include head.html %}
+
+<style>
+	body,
+	.sticky-footer-wrapper {
+		min-height: 100vh;
+	}
+</style>
+
+
+<body>
+	<div class="d-flex flex-column sticky-footer-wrapper">
+		{% include nav-bar.html %}
+		<main class="flex-fill">
+			{{ content }}
+		</main>
+		{% include footer.html %}
+	</div>
+
+	{% include script.html %}
+</body>
+
+</html>
