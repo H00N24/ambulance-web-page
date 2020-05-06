@@ -1,11 +1,17 @@
 title: Všeobecná ambulancia pre dospelých MUDr. Valéria Kuráková
 email: ambulancia.kurakova@gmail.com
 mobile: "+421 948 917 761"
-primary_color: "#303f9f"
+primary_color: "#1565c0"
 secondary_color: "#3f51b5"
 description: >-
-  Všeobecná ambulacia pre dospelých MUDr. Valéria Kuráková. Ondavská 4/A, 04011 Košice.
-  Ambulancia všeobecného lekára.
+  Všeobecná ambulacia pre dospelých, MUDr.Valéria Kuráková (VALS s.r.o.).
+  Ondavská 4/A, 04011 Košice.
+  Ordinačné hodiny:
+  Pondelok	7:30-15:00
+  Utorok	7:30-14:00
+  Streda	7:30-16:30	(Návštevná služba 7:30 - 12:30)
+  Štvrtok	7:30-14:00
+  Piatok	7:30-13:30
 baseurl: ""
 url: "https://vseobecna-ambulancia-ke.sk"
 

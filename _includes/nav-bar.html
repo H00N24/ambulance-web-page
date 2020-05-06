@@ -1,26 +1,52 @@
-<nav class="navbar navbar-expand-lg navbar-dark mb-3" style="background-color: {{ site.primary_color }};">
-    <div class="container">
-        <a class="navbar-brand ml-1 mr-4" href="#">
-            <div class="row">MUDr. Valéria Kuráková</div>
-            <div class="row" style="font-size: 0.9rem;">Všeobecný lekár pre dospelých</div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mx-3" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Domov<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/kontakt">Kontakt<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <div class="row text-light">
-                <div class="col-md-auto my-1"><i class="material-icons mr-1 align-middle">phone</i> {{ site.mobile }} </div>
-                <div class="col-md-auto my-1"><i class="material-icons mr-1 align-middle">email</i>{{ site.email }}</div>
-            </div>
+<nav
+  class="navbar navbar-expand-lg navbar-dark"
+  style="background-color: {{ site.primary_color }};"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand js-scroll-trigger ml-1 mr-4" href="/#page-top">
+      <div class="row">MUDr. Valéria Kuráková</div>
+      <div class="row" style="font-size: 0.9rem;">
+        Všeobecný lekár pre dospelých
+      </div>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mx-3" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active js-scroll-trigger">
+          <a class="nav-link" href="#page-top"
+            >Domov<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active js-scroll-trigger" href="/#opening-hours"
+            >Ordinačné hodiny<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active js-scroll-trigger" href="/#contact"
+            >Kontakt<span class="sr-only">(current)</span></a
+          >
+        </li>
+      </ul>
+      <div class="row text-light">
+        <div class="col-md-auto my-1">
+          <i class="material-icons mr-1 align-middle">phone</i> {{ site.mobile
+          }}
         </div>
+        <div class="col-md-auto my-1">
+          <i class="material-icons mr-1 align-middle">email</i>{{ site.email }}
+        </div>
+      </div>
     </div>
+  </div>
 </nav>
