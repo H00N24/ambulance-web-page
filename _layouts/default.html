@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="sk">
-  {% include head.html %}
+{% include head.html %}
 
-  <style>
-    body {
-      font-family: "Roboto", sans-serif;
-    }
+<style>
+  body {
+    font-family: "Roboto", sans-serif;
+  }
 
-    body,
-    .sticky-footer-wrapper {
-      min-height: 100vh;
-    }
+  body,
+  .sticky-footer-wrapper {
+    min-height: 100vh;
+  }
 
+  .parallax {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.2)),
+      url("images/parallax-image.jpg");
+    height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (max-device-width: 1024px) {
     .parallax {
-      background-image: linear-gradient(
-          rgba(255, 255, 255, 0.9),
-          rgba(255, 255, 255, 0.2)
-        ),
-        url("images/parallax-image.jpg");
-      height: 400px;
-
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-attachment: scroll;
     }
+  }
 
-    @media only screen and (max-device-width: 1024px) {
-      .parallax {
-        background-attachment: scroll;
-      }
-    }
+  .text-box {
+    height: 400px;
+    padding-top: 100px;
+  }
+</style>
 
-    .text-box {
-      height: 400px;
-      padding-top: 100px;
-    }
-  </style>
+<body id="page-top">
+  <div class="d-flex flex-column sticky-footer-wrapper">
+    {% include nav-bar.html %}
+    <main class="flex-fill">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
 
-  <body id="page-top">
-    <div class="d-flex flex-column sticky-footer-wrapper">
-      {% include nav-bar.html %}
-      <main class="flex-fill">
-        {{ content }}
-      </main>
-      {% include footer.html %}
-    </div>
+  {% include script.html %}
+</body>
 
-    {% include script.html %}
-  </body>
 </html>
